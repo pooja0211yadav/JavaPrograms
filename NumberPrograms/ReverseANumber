@@ -13,6 +13,24 @@ public class Main
             n = n / 10;
         }
         System.out.print("Reversed Number is: "+ rev);
+
+
+
+
+
+int n=1234;
+	  
+	   // conversion of int to string
+	    String temp = "" + n;
+
+       StringBuilder sb = new StringBuilder(temp);
+        
+        // using reverse method to
+        // reverse the obj
+        StringBuilder str = sb.reverse();
+        
+        // printing reverse number
+        System.out.println(str.toString());
 	}
 }
 
