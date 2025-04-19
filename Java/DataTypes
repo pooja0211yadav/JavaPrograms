@@ -1,1 +1,19 @@
+public class Lab
+{
+   public static void main(String[] args) {
+      System.out.print("Hello Pramod");
+      System.out.print("Hello Dutta\t");
+      System.out.println("Amit");
+      System.out.println("Sharma");
+      System.out.println("1");
+      System.out.println("2");
+      System.out.println("3");
+      System.out.println("Interview Q");
 
+      System.out.println(4);
+      int age = true;
+      int age = -1;
+      int age = age + 1;
+      System.out.println(age);
+   }
+}
