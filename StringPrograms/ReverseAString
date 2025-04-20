@@ -4,6 +4,8 @@ public static void main(String[] args) {
 Scanner scanner = new Scanner(System.in);
 System.out.print("Enter a string: ");
 String input = scanner.nextLine();
+
+//Logic 1
 char ch;
 String nstr = "";
 for (int i = 0; i < input.length(); i++) {
@@ -11,5 +13,9 @@ ch = input.charAt(i);
 nstr = ch + nstr;
 }
 System.out.println("Reversed String is : " + nstr);
+
+//Logic 2 
+StringBuilder reversed = new StringBuilder(input).reverse();
+ System.out.println(reversed);
 }
 }
