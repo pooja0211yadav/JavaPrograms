@@ -4,21 +4,24 @@ public class Main
     public static void main(String[] args) 
     {
         String str = "madam";
-        System.out.println(isPalindrome(str));
-    }
-    static boolean isPalindrome(String str) 
-    {
+//Logic 1
         int start = 0;
         int end = str.length() - 1;
         while (start < end) 
         {
             if (str.charAt(start) != str.charAt(end)) 
             {
-                return false;
+                System.out.println("Not Palindrome");
             }
                 start++;
                 end--;
         }
-        return true;
+        System.out.println("Palindrome");
+        
+//Logic 2
+        String reversed = new StringBuilder(str).reverse().toString();
+        System.out.println(str.equals(reversed));
+
+  
     }
 }
