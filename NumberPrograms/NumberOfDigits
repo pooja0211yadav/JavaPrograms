@@ -23,3 +23,13 @@ public class Main
     System.out.println("Number of digits in given number is :" +a); 
     }
 }
+
+//Logic 2
+
+public class CountDigits {
+ public static void main(String[] args) {
+ int num = 12345;
+ int count = String.valueOf(num).length();
+ System.out.println(count);
+ }
+}
