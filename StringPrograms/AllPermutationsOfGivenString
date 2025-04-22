@@ -22,3 +22,30 @@ public class Main
         }
     }
 }
+
+//logic 2
+
+public class Substrings
+{
+public static void main(String[] args)
+{
+String str = "abc";
+findAllSubstrings(str);
+}
+
+public staic void findAllSubstrings(String str)
+{
+for(int i=0; i< str.length();i++)
+{
+for(int j=i+1;j<=str.length();j++)
+{
+System.out.println(str.substring(i,j));
+}
+}
+}
+}
+
+
+Explanation:
+ str.substring(i, j): Extracts all substrings starting from index i to j.
+ Nested loops ensure that all possible substrings are printed.
