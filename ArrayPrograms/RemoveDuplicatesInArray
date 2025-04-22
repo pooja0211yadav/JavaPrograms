@@ -9,3 +9,20 @@ public class RemoveDuplicates {
  System.out.println(set);
  }
 }
+
+
+
+import java.util.HashSet;
+public class FindDuplicates {
+ public static void main(String[] args) {
+ int[] array = {1, 2, 2, 3, 4, 4,5,2,3};
+ HashSet<Integer> set = new HashSet<>();
+ System.out.println("Duplicate elements: ");
+ for (int num : array) {
+ if(!set.add(num));
+ {
+ System.out.println(num);
+ }
+}
+}
+}
