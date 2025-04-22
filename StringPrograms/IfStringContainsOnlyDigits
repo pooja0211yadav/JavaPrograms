@@ -1,0 +1,23 @@
+public class CheckDigits
+{
+public static void main(String[] args)
+{
+String str = "12345";
+if(containsOnlyDigits(str))
+{  System.out.println("String contains only Digits.");  }
+else 
+{  System.out.println("String contains  non-digits characters.");  }
+}
+
+public static boolean containsOnlyDigits(String str)
+{
+for(char ch : str.toCharArray())
+{
+if(!Character.isDigit(ch))
+{
+return false;
+}
+}
+return true;
+}
+}
