@@ -1,0 +1,27 @@
+import java.util.HashMap;
+public class ElementFrequency
+{
+public static void main(String[] args)
+{
+int[] array={1,2,3,2,3,4,5,3};
+HashMap<Integer,Integer> frequencyMap = new HashMap<>();
+
+for (int num : array)
+{
+frequencyMap.put(num, frequencyMap.getOrDefault(num,0)+1);
+}
+System.out.println("Element frequencies:");
+for(int key: frequencyMap.keySet())
+{
+System.out.println(key + ":" + frequencyMap.get(key));
+}
+}
+}
+
+
+Explanation:
+ HashMap<Integer, Integer> frequencyMap = new HashMap<>(): A HashMap is
+used to store the frequency of each element.
+ frequencyMap.put(num, frequencyMap.getOrDefault(num, 0) + 1): For each
+element, update its frequency in the map.
+ The program prints the frequency of each element.
