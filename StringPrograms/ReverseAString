@@ -19,3 +19,36 @@ StringBuilder reversed = new StringBuilder(input).reverse();
  System.out.println(reversed);
 }
 }
+
+
+
+
+public class ReverseString
+{
+public static void main(String[] args)
+{
+String str = "Selenium";
+String reversed = reverse(str);
+System.out.println("Reversed string: " + reversed);
+}
+
+public static String reverse(String str)
+{
+StringBuilder reversedStr = new StringBuilder();
+
+for(int i = str.length()-1 ; i>=0 ;--)
+{
+reversedStr.append(str.charAt(i));
+}
+return reversedStr.toString();
+}
+}
+
+
+Explanation:
+ for (int i = str.length() - 1; i >= 0; i--): Loops through the string from the end to
+the beginning.
+ reversedStr.append(str.charAt(i)): Appends each character to the reversed
+string
+
+
