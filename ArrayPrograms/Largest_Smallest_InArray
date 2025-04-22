@@ -1,0 +1,32 @@
+public class LargestSmallest
+{
+public static void main (String[] args)
+int[] numbers ={3,5,7,2,8,-1,4};
+int largest = numbers[0];
+int smallest = numbers[0];
+for(int num : numbers) 
+{
+if (num > largest)
+{
+largest =num;
+}
+else if (num < smallest)
+{
+smallest = num;
+}
+}
+System.out.println("Largest: "+largest);
+System.out.println("Smallest: "+smallest);
+}
+}
+
+Explanation:
+ int largest = numbers[0]; and int smallest = numbers[0]: These variables are
+initialized with the first element of the array to track the largest and smallest
+numbers.
+ for (int num : numbers): This loop iterates through each element in the array.
+ if (num > largest): If the current number is greater than `largest`, update `largest`
+with the current number.
+ else if (num < smallest): If the current number is smaller than `smallest`, update
+`smallest`.
+ Finally, it prints the largest and smallest numbers.
