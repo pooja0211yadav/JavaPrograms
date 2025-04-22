@@ -1,0 +1,20 @@
+public class ArraySum
+{
+public static void main(String[] args)
+{
+int[] array={1,2,3,4,5};
+int sum=0;
+for(int num : array)
+{
+sum=sum+num;
+}
+System.out.println("Sum of elements: " +sum);
+}
+}
+
+
+
+Explanation:
+ int sum = 0: Initialize a `sum` variable to store the total sum of the elements.
+ for (int num : array): Iterate through the array and add each element to `sum`.
+ Print the final sum.
