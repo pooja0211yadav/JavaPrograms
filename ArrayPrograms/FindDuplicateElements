@@ -1,0 +1,22 @@
+import java.util.HashSet;
+public class FindDuplicates {
+ public static void main(String[] args) {
+ int[] array = {1, 2, 2, 3, 4, 4,5,2,3};
+ HashSet<Integer> set = new HashSet<>();
+ System.out.println("Duplicate elements: ");
+ for (int num : array) {
+ if(!set.add(num))
+ {
+ System.out.println(num);
+ }
+}
+}
+}
+
+Explanation:
+ HashSet<Integer> set = new HashSet<>(): Use a HashSet to track unique
+elements.
+ if (!set.add(num)): The `add()` method returns false if the element is already
+present, indicating a duplicate.
+ Print any duplicate elements found in the array.
+
