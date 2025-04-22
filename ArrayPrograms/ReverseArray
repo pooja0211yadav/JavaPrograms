@@ -1,0 +1,34 @@
+public class ReverseArray
+{
+  public static void main(String[] args)
+  {
+    int[] array={1,2,3,4,5};
+    int start =0;
+    int end = array.length-1;
+
+    while(start<end)
+      {
+      int temp = array[start];
+      array[start]=array[end];
+      array[end]=temp;
+      start++;
+      end--;
+      }
+    System.out.println("Reversed Array:");
+    for(int num : array)
+      {
+      System.out.println(num + " ");
+      }
+    }
+  }
+
+Explanation:
+ int start = 0; int end = array.length - 1: Initialize two pointers, `start` at the
+beginning of the array and `end` at the last element.
+ while (start < end): Continue swapping the elements at `start` and `end` positions
+until `start` and `end` meet in the middle.
+ array[start] = array[end]; array[end] = temp: Swap the elements at the `start` and
+`end` indices.
+ The array is then printed in reverse order.
+    
+    
