@@ -1,0 +1,37 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class MostFrequentChar
+{
+public static main(String[] args)
+{
+String str= "success";
+char mostFrequent = findMostFrequentChar(str);
+System.out.println("Most frequent character: " + mostFrequent);
+}
+public static char findMostFrequentChar(String str)
+{
+Map<Character,Integer> charCountMap = new HashMap<>();
+int maxCount = 0;
+char mostFrequent = '\0';
+
+for(char ch : str.toCharArray())
+{
+int count = charCountMap.getOrDefault(ch, 0) +1;
+charCountMap.put(ch,count);
+
+if (count > maxCount)
+{
+maxCount =count;
+mostFrequent = ch;
+}
+}
+return mostFrequent;
+}
+}
+
+
+
+Explanation:
+ if (count > maxCount): Tracks the character with the highest frequency.
+ Updates the most frequent character during iteration.
