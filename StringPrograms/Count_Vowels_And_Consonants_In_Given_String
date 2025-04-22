@@ -44,3 +44,8 @@ public class Main {
  System.out.println("Vowels: " + vowels + ", Consonants: " + consonants);
  }
 }
+
+
+Explanation:
+ vowels.indexOf(ch) != -1: Checks if the character is a vowel.
+ Character.isLetter(ch): Ensures that only letters are counted as consonants.
