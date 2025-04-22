@@ -38,3 +38,36 @@ public class CountCharacter {
  System.out.println(count);
  }
 }
+
+
+
+import java.util.HashMap;
+import java.util.Map;
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        String str="testing";
+        countCharOccurrence(str);
+    }
+    public static void countCharOccurrence(String str) 
+    {
+        Map<Character,Integer> charCountMap = new HashMap<>();
+        for(String ch : str.toCharArray())
+        {
+                charCountMap.put(ch,charCountMap.getOrDefault(ch, 0)+1);
+        }
+            for( Map.Entry<Character,Integer> entry : charCountMap.entrySet())
+            {
+                System.out.println(entry.getKey() + ":" + entry.getValue());
+            }
+    }
+}
+
+
+
+Explanation:
+ charCountMap.put(ch, charCountMap.getOrDefault(ch, 0) + 1): Increments the
+count of each character.
+ for (Map.Entry<Character, Integer> entry): Iterates through the map to print the
+count of each character.
