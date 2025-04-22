@@ -12,17 +12,28 @@ public class RemoveDuplicates {
 
 
 
-import java.util.HashSet;
-public class FindDuplicates {
- public static void main(String[] args) {
+
+
+import java.util.Arrays;
+public class RemoveDuplicates 
+{
+ public static void main(String[] args) 
+{
  int[] array = {1, 2, 2, 3, 4, 4,5,2,3};
- HashSet<Integer> set = new HashSet<>();
- System.out.println("Duplicate elements: ");
- for (int num : array) {
- if(!set.add(num));
+int[] array ={1,2,2,3,4,4,5};
+int[] uniqueArray = Arrays.stream(array).distinct().toArray();
+
+ System.out.println("Array without Duplicate elements: ");
+ for (int num : uniqueArray) {
  {
- System.out.println(num);
+ System.out.println(num + " ");
  }
 }
 }
-}
+
+
+Explanation:
+ Arrays.stream(array).distinct().toArray(): Convert the array to a stream,
+remove duplicates using distinct(), and convert it back to an array.
+ The program prints the array without duplicates.
+
