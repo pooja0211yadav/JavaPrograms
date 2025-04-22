@@ -21,3 +21,8 @@ return false;
 return true;
 }
 }
+
+
+Explanation:
+ Character.isDigit(ch): Checks if each character is a digit.
+ If any character is not a digit, it returns false.
