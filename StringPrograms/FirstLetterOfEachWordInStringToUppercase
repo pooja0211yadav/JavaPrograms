@@ -1,0 +1,40 @@
+public class FirstLetterUppercase
+{
+public static void main(String[] args)
+{
+String sentence = "quality assurance automation testing";
+String result = convertToUpperCase(sentence);
+System.out.println("Converted senetence: " + result);
+}
+
+public static String convertToUpperCase(String sentence)
+{
+StringBuilder result = new StringBuilder();
+boolean capitalize =true;
+for (char ch : sentence.toCharArray())
+{
+if(capitalize && Character.isLetter(ch))
+{
+result.append(Character.toUpperCase(ch);
+capitalize=false;
+}
+else
+{
+result.append(ch);
+}
+if(ch ==' ')
+{
+capitalize =true;
+}
+}
+return result.toString();
+}
+}
+
+
+Explanation:
+ boolean capitalize = true: A flag to indicate when to capitalize a letter.
+ Character.toUpperCase(ch): Converts the character to uppercase if it is the first
+letter of a word.
+ The flag is reset after every space character, allowing the first letter of the next word
+to be capitalized.
