@@ -1,22 +1,37 @@
+/*
+An Armstrong number is a number that is equal to the sum of its own digits each raised to the power of the number of digits.
+153 :	1³ + 5³ + 3³ = 1 + 125 + 27 = 153	
+9474 :	9⁴ + 4⁴ + 7⁴ + 4⁴ = 9474
+*/
+
 import java.util.Scanner;
 public class Main {
-public static void main(String[] args) {
-int arm=0, a,b,c,d,no;
-Scanner scanner = new Scanner(System.in);
-System.out.println("Enter any number : ");
-no = scanner.nextInt();
-d = no;
-while(no>0)
-{
-a = no%10;
-no = no/10;
-arm =arm+a*a*a;
+  public static void main(String[] args) {
+      int arm=0, a,b,c,d,no;
+      Scanner scanner = new Scanner(System.in);
+      System.out.println("Enter any number : ");
+      no = scanner.nextInt();
+      d = no;
+      while(no>0)
+      {
+          a = no%10;
+          no = no/10;
+          arm =arm+a*a*a;
+      }
+      if(arm==d){
+          System.out.println("Armstrong number");
+      }
+      else{
+          System.out.println("Not Armstrong number");
+      }
+  }
 }
-if(arm==d){
-System.out.println("Armstrong number");
-}
-else{
-System.out.println("Not Armstrong number");
-}
-}
-}
+
+Output:
+Enter any number : 
+153
+Armstrong number
+
+Enter any number : 
+184
+Not Armstrong number
