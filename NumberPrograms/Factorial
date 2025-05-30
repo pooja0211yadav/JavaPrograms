@@ -1,32 +1,53 @@
+/*
+The factorial of a non-negative integer n is the product of all positive integers less than or equal to n.
+Notation: n! = n × (n-1) × (n-2) × ... × 1
+0! = 1 by definition
+
+Examples:
+5! = 5 × 4 × 3 × 2 × 1 = 120
+3! = 3 × 2 × 1 = 6
+0! = 1
+*/
+
 import java.util.Scanner;
 public class Main
 {
-public static void main(String[] args) 
-{
-int factorial =1;
-Scanner scanner = new Scanner(System.in);
-System.out.print("Enter any number: ");
-int number = scanner.nextInt();
+   public static void main(String[] args) 
+   {
+      int factorial =1;
+      Scanner scanner = new Scanner(System.in);
+      System.out.print("Enter any number: ");
+      int number = scanner.nextInt();
+      for (int i = 1; i <= number; i++)
+      {
+         factorial = factorial * i;
+      }
+      System.out.println("Factorial number is :" +factorial);
+   }
+}
 
-for (int i = 1; i <= number; i++)
-{
-factorial = factorial * i;
-}
-System.out.println("Factorial number is :" +factorial);
-}
-}
+Output:
+Enter any number: 10
+Factorial number is :3628800
 
 //Using Recursion
-public class FactorialRecursion {
- public static void main(String[] args) {
- int num = 5;
- System.out.println(factorial(num));
- }
- static int factorial(int n) {
- if (n == 0) return 1;
- return n * factorial(n - 1);
- }
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) 
+    {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter any number: ");
+        int num = scanner.nextInt();
+         System.out.println(factorial(num));
+    }
+    static int factorial(int n) 
+    {
+         if (n == 0) 
+         return 1;
+         return n * factorial(n - 1);
+     }
 }
 
-Enter any number: 5
-Factorial number is :120
+Output:
+Enter any number: 8
+40320
