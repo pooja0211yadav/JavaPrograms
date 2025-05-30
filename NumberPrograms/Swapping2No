@@ -6,25 +6,25 @@ public class Main
 	    t=a;
 	    a=b;
 	    b=t;
-		System.out.println("a="+a + " and b="+b);
+	    System.out.println("a="+a + " and b="+b);
 		
-		a=a+b;
-		b=a-b;
-		a=a-b;
-		System.out.println("a="+a + " and b="+b);
-		
-		a=a*b;
-		b=a/b;
-		a=a/b;
-		System.out.println("a="+a + " and b="+b);
-		
-		a=a^b;
-		b=a^b;
-		a=a^b;
-		System.out.println("a="+a + " and b="+b);
-		
-		b=a+b-(a=b);
-		System.out.println("a="+a + " and b="+b);
+	a=a+b;
+	b=a-b;
+	a=a-b;
+	System.out.println("a="+a + " and b="+b);
+	
+	a=a*b;
+	b=a/b;
+	a=a/b;
+	System.out.println("a="+a + " and b="+b);
+	
+	a=a^b;
+	b=a^b;
+	a=a^b;
+	System.out.println("a="+a + " and b="+b);
+	
+	b=a+b-(a=b);
+	System.out.println("a="+a + " and b="+b);
 
 	}
 }
