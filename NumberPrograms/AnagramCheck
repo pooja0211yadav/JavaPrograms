@@ -1,3 +1,10 @@
+/*
+An anagram number is when two numbers are composed of the same digits, but possibly in different orders.
+Examples:
+123 and 321 → Anagram numbers 
+1203 and 3021 → Anagram numbers 
+*/
+
 import java.util.Arrays;
 public class Main {
  public static void main(String[] args) {
@@ -9,3 +16,35 @@ public class Main {
  System.out.println(Arrays.equals(arr1, arr2));
  }
 }
+
+Output:
+true
+
+import java.util.Arrays;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+         Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter first number: ");
+        int num1 = scanner.nextInt();
+        System.out.print("Enter second number: ");
+        int num2 = scanner.nextInt();
+        // Convert both numbers to character arrays of digits
+        char[] num1Digits = String.valueOf(num1).toCharArray();
+        char[] num2Digits = String.valueOf(num2).toCharArray();
+        // Sort the digit arrays
+        Arrays.sort(num1Digits);
+        Arrays.sort(num2Digits);
+         if (Arrays.equals(num1Digits, num2Digits)) {
+            System.out.println(num1 + " and " + num2 + " are anagram numbers.");
+        } else {
+            System.out.println(num1 + " and " + num2 + " are NOT anagram numbers.");
+        }
+        scanner.close();
+    }
+}
+
+Output:
+Enter first number: 14563
+Enter second number: 13645
+14563 and 13645 are anagram numbers.
