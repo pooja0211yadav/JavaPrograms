@@ -1,7 +1,16 @@
-public class StringContains {
- public static void main(String[] args) {
- String str1 = "Automation Testing";
- String str2 = "Testing";
- System.out.println(str1.contains(str2));
- }
+public class Main {
+    public static void main(String[] args) {
+        String mainString = "Hello, welcome to Java programming!";
+        String searchString = "Java";
+
+        // Check if mainString contains searchString
+        if (mainString.contains(searchString)) {
+            System.out.println("The string contains: " + searchString);
+        } else {
+            System.out.println("The string does not contain: " + searchString);
+        }
+    }
 }
+
+Output:
+The string contains: Java
