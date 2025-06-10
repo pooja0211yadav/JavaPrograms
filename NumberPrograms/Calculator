@@ -1,6 +1,8 @@
 import java.util.Scanner;
-   public class SimpleCalculator {
-    public static void main(String[] args) {
+   public class SimpleCalculator 
+{
+    public static void main(String[] args) 
+{
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter first number: ");
         double num1 = scanner.nextDouble();
@@ -9,7 +11,8 @@ import java.util.Scanner;
         System.out.print("Enter operation (+, -, *, /): ");
         char operation = scanner.next().charAt(0);
         double result;
-        switch (operation) {
+        switch (operation) 
+         {
            case '+': result = num1 + num2; break;
            case '-': result = num1 - num2; break;
            case '*': result = num1 * num2; break;
