@@ -9,3 +9,17 @@ public class Main {
 System.out.println(Arrays.toString(merged));
  }
 }
+
+
+
+
+
+logic:
+
+System.arraycopy(
+    arr1,      // copy from arr1
+    0,         // start from index 0
+    merged,    // put into merged array
+    0,         // start inserting at index 0
+    3          // copy 3 elements
+);
