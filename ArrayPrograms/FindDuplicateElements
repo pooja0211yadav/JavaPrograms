@@ -14,6 +14,11 @@ public class FindDuplicates {
 }
 
 Explanation:
+HashSet's add() method returns a boolean value:
+true → element was added successfully (element was not present before)
+false → element was already present (duplicate)
+
+
  HashSet<Integer> set = new HashSet<>(): Use a HashSet to track unique
 elements.
  if (!set.add(num)): The `add()` method returns false if the element is already
