@@ -13,8 +13,9 @@ public class SecondLargest {
  System.out.println(second);
  }
 }
-
-
+Integer.MIN_VALUE means:
+It is the smallest possible integer value, so any array element will be greater than it.
+Use Integer.MIN_VALUE because it makes the algorithm independent of the input range and handles negative values correctly.
 ****************************************************************************
 
 Alternative using sorting
